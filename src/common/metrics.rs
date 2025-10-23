@@ -198,6 +198,7 @@ impl MetricsProvider for CollectionsTelemetry {
             "number of currently running optimization processes",
             MetricType::GAUGE,
             vec![gauge(total_optimizations_running as f64, &[])],
+            prefix,
         ));
     }
 }
